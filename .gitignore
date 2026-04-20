@@ -1,0 +1,42 @@
+# LLM Wiki & Knowledge Base
+wiki/
+references/
+raw/
+outputs/
+
+# Auto-generated analysis
+.discoveries/
+
+# OpenCode config & dependencies
+.opencode/node_modules/
+.opencode/package.json
+.opencode/package-lock.json
+.opencode/bun.lock
+.sisyphus/
+
+# Editor & system
+.DS_Store
+*.swp
+*.swo
+*~
+
+# Environment (không commit secrets)
+.env
+.env.local
+.env.*.local
+
+# Build artifacts
+*.pyc
+__pycache__/
+*.class
+*.o
+*.so
+*.dylib
+
+# Temporary
+*.tmp
+*.temp
+.cache/
+
+# Logs
+WORKLOG/

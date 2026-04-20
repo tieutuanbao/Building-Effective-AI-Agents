@@ -1,0 +1,70 @@
+# LLM Wiki Configuration
+# Auto-generated on init
+
+wiki:
+  name: "Building Effective AI Agents"
+  description: "Knowledge base for building effective AI agents - patterns, architectures, prompting strategies, and best practices"
+
+topics:
+  - name: "Building Effective AI Agents"
+    keywords:
+      - "AI agent"
+      - "agentic AI"
+      - "autonomous agent"
+      - "agent architecture"
+      - "agentic systems"
+      - "LLM agent"
+      - "AI coding agent"
+      - "agent orchestration"
+      - "agent tools"
+      - "agent memory"
+      - "agentic workflows"
+      - "multi-agent systems"
+      - "agent evaluation"
+      - "agent safety"
+      - "agent reliability"
+    subreddits:
+      - "r/LocalLLaMA"
+      - "r/ChatGPT"
+      - "r/MachineLearning"
+      - "r/programming"
+    github:
+      repos:
+        - "anthropics/claude-code"
+        - "openai/swarm"
+        - "babyagi/babyagi"
+        - "yoheinakajima/babyagi"
+        - "meta-agents/meta-agents"
+
+discovery:
+  strategies:
+    - reddit_scan
+    - github_trending
+    - github_watch
+    - web_search
+    - gap_fill
+
+  subreddits:
+    - "LocalLLaMA"
+    - "ChatGPT"
+    - "MachineLearning"
+
+schedule:
+  discover:
+    max_sources: 10
+    interval_days: 7
+
+  ingest:
+    batch_size: 5
+
+  lint:
+    auto_fix: false
+
+feeds:
+  - name: "Hacker News"
+    url: "https://hnrss.org/frontpage"
+    topic: "AI Agents"
+
+  - name: "AI News"
+    url: "https://news.ycombinator.com/"
+    topic: "AI Agents"
